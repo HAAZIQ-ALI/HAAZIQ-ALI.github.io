@@ -4,6 +4,7 @@ import FeatureCard from "./FeatureCard";
 import ShowcaseCard from "./ShowcaseCard";
 import StepCard from "./StepCard";
 import Footer from "./Footer";
+import { TypeAnimation } from 'react-type-animation';
 
 export default function MainContent() {
   // Skills
@@ -72,9 +73,42 @@ export default function MainContent() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-hypr-accent">
               OREWA HAAZIQ ALI
             </h2>
-            <p className="text-xl text-hypr-text/80 mb-8">
-              A passionate learner in Computer Science, <span className="text-hypr-accent">Data Science</span>, DSA, and Chess
-            </p>
+            <div className="text-xl text-hypr-text/80 mb-8 h-[60px] flex justify-center">
+              <div className="flex gap-2">
+                <span>Orewa</span>
+                <TypeAnimation
+                  sequence={[
+                    'Data Scientist',
+                    1000,
+                    'Programmer',
+                    1000,
+                    'Chess Player',
+                    1000,
+                    'Problem Solver',
+                    1000,
+                    'ML Enthusiast',
+                    1000,
+                    'DSA Expert',
+                    1000,
+                    'Python Developer',
+                    1000,
+                    'AI Researcher',
+                    1000,
+                    'Logic Master',
+                    1000,
+                    'Math Enthusiast',
+                    1000,
+                    'Future Innovator',
+                    1000,
+                  ]}
+                  wrapper="span"
+                  speed={50}
+                  style={{ fontSize: '1.25rem', display: 'inline-block', minWidth: '180px' }}
+                  className="text-hypr-accent font-semibold"
+                  repeat={Infinity}
+                />
+              </div>
+            </div>
             <div className="flex flex-wrap gap-4 justify-center mt-6">
               <a
                 href="#projects"
