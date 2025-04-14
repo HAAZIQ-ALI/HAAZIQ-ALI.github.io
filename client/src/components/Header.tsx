@@ -20,7 +20,7 @@ export default function Header({ isSidebarOpen, setIsSidebarOpen }: HeaderProps)
           </button>
           <a href="/" className="flex items-center space-x-3">
             <span className="text-hypr-accent text-2xl"><i className="fas fa-code"></i></span>
-            <h1 className="font-bold text-xl">Haaziq</h1>
+            <h1 className="font-bold text-xl">HAAZIQ ALI</h1>
           </a>
         </div>
         <nav className="hidden md:flex items-center space-x-6">

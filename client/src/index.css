@@ -4,45 +4,45 @@
 
 @layer base {
   :root {
-    --background: 273 100% 5%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 5%;
+    --foreground: 0 0% 98%;
     
-    --card: 273 30% 12%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 98%;
     
-    --popover: 273 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 98%;
     
-    --primary: 273 91.1% 58.8%;
+    --primary: 292 90% 80%;
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 273 76.9% 40.4%;
+    --secondary: 292 50% 40%;
     --secondary-foreground: 0 0% 100%;
     
-    --muted: 273 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 292 30% 15%;
+    --muted-foreground: 292 10% 70%;
     
-    --accent: 273 73.7% 63.7%;
+    --accent: 292 73.7% 63.7%;
     --accent-foreground: 0 0% 100%;
     
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 100%;
     
-    --border: 273 32.6% 17.5%;
-    --input: 273 32.6% 17.5%;
-    --ring: 273 26.8% 83.9%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 292 70% 70%;
     
     --radius: 0.5rem;
     
     /* Portfolio specific colors */
-    --hypr-bg: 273 60% 5%;
-    --hypr-sidebar: 273 32.6% 17.5%;
-    --hypr-text: 210 40% 98%;
-    --hypr-primary: 273 90% 60%;
-    --hypr-secondary: 273 76.9% 40.4%;
-    --hypr-accent: 273 73.7% 63.7%;
-    --hypr-code-bg: 273 32.6% 17.5%;
-    --hypr-border: 273 25% 27%;
+    --hypr-bg: 0 0% 5%;
+    --hypr-sidebar: 0 0% 10%;
+    --hypr-text: 0 0% 98%;
+    --hypr-primary: 292 90% 80%;
+    --hypr-secondary: 292 50% 40%;
+    --hypr-accent: 292 90% 80%;
+    --hypr-code-bg: 0 0% 10%;
+    --hypr-border: 0 0% 15%;
   }
 
   * {

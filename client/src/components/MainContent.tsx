@@ -1,7 +1,6 @@
 import React from "react";
 import SectionTitle from "./SectionTitle";
 import FeatureCard from "./FeatureCard";
-import CodeBlock from "./CodeBlock";
 import ShowcaseCard from "./ShowcaseCard";
 import StepCard from "./StepCard";
 import Footer from "./Footer";
@@ -61,117 +60,34 @@ export default function MainContent() {
     }
   ];
 
-  // React component example
-  const reactCodeExample = `// Portfolio Project Card Component
-import React from 'react';
-import './ProjectCard.css';
-
-interface ProjectCardProps {
-  title: string;
-  description: string;
-  technologies: string[];
-  imageUrl: string;
-  githubUrl: string;
-  liveUrl?: string;
-}
-
-const ProjectCard: React.FC<ProjectCardProps> = ({
-  title,
-  description,
-  technologies,
-  imageUrl,
-  githubUrl,
-  liveUrl
-}) => {
-  return (
-    <div className="project-card">
-      <div className="project-image">
-        <img src={imageUrl} alt={title} />
-      </div>
-      
-      <div className="project-content">
-        <h3 className="project-title">{title}</h3>
-        <p className="project-description">{description}</p>
-        
-        <div className="project-technologies">
-          {technologies.map((tech, index) => (
-            <span key={index} className="tech-tag">
-              {tech}
-            </span>
-          ))}
-        </div>
-        
-        <div className="project-links">
-          <a 
-            href={githubUrl} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="github-link"
-          >
-            <i className="fab fa-github"></i> View Code
-          </a>
-          
-          {liveUrl && (
-            <a 
-              href={liveUrl} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="live-link"
-            >
-              <i className="fas fa-external-link-alt"></i> Live Demo
-            </a>
-          )}
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default ProjectCard;`;
-
   return (
     <main className="flex-1 lg:ml-64 p-6 md:p-8 max-w-7xl mx-auto">
       {/* Hero Section */}
       <section id="home" className="mb-16">
-        <div className="rounded-lg border border-hypr-border bg-gradient-to-br from-hypr-bg/20 to-hypr-bg/50 p-6 md:p-8 flex flex-col md:flex-row items-center">
-          <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Hi There! <span className="wave">👋</span>
+        <div className="rounded-lg border border-hypr-border bg-gradient-to-br from-hypr-bg/20 to-hypr-bg/50 p-6 md:p-8 flex flex-col items-center">
+          <div className="text-center max-w-3xl mx-auto">
+            <h1 className="text-5xl md:text-6xl font-bold mb-4">
+              This is
             </h1>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              I'm <span className="text-hypr-accent">Haaziq</span>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-hypr-accent">
+              illogical-impulse
             </h2>
-            <p className="text-xl text-hypr-text/80 mb-6">
-              A passionate learner in Computer Science, Chess, and Programming
+            <p className="text-xl text-hypr-text/80 mb-8">
+              Orewa <span className="text-hypr-accent">Haaziq</span>, a passionate learner in Computer Science, Chess, and Programming
             </p>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-4 justify-center mt-6">
               <a
                 href="#projects"
-                className="bg-hypr-primary hover:bg-hypr-primary/80 px-4 py-2 rounded-md text-sm font-medium transition flex items-center"
+                className="bg-hypr-primary hover:bg-hypr-primary/80 px-6 py-3 rounded-full text-sm font-medium transition flex items-center"
               >
-                <i className="fas fa-code-branch mr-2"></i> Projects
+                <i className="fas fa-code-branch mr-2"></i> Showcase
               </a>
               <a
                 href="#skills"
-                className="bg-hypr-sidebar hover:bg-hypr-sidebar/80 px-4 py-2 rounded-md text-sm font-medium transition flex items-center"
+                className="bg-hypr-sidebar hover:bg-hypr-sidebar/80 px-6 py-3 rounded-full text-sm font-medium transition flex items-center"
               >
-                <i className="fas fa-cogs mr-2"></i> Skills
+                <i className="fas fa-cogs mr-2"></i> Quick Start
               </a>
-              <a
-                href="#contact"
-                className="bg-hypr-sidebar hover:bg-hypr-sidebar/80 px-4 py-2 rounded-md text-sm font-medium transition flex items-center"
-              >
-                <i className="fas fa-envelope mr-2"></i> Contact Me
-              </a>
-            </div>
-          </div>
-          <div className="md:w-1/2 flex justify-center">
-            <div className="w-full max-w-md">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
-                alt="Programming workspace illustration"
-                className="opacity-70 w-full"
-              />
             </div>
           </div>
         </div>
@@ -184,7 +100,7 @@ export default ProjectCard;`;
         <div className="bg-hypr-sidebar rounded-lg border border-hypr-border p-6">
           <div className="prose prose-invert max-w-none">
             <p className="text-lg">
-              I am Haaziq, a 14-year-old passionate about programming, AI, and chess. I strive to become a data scientist and AI engineer by the time I finish school. Alongside coding, I also enjoy playing chess, where I reached a peak rating of 1900 Elo.
+              Orewa Haaziq, a 14-year-old passionate about programming, AI, and chess. I strive to become a data scientist and AI engineer by the time I finish school. Alongside coding, I also enjoy playing chess, where I reached a peak rating of 1900 Elo.
             </p>
             <p className="text-lg mt-4">
               My values center around kindness, supporting others, and striving to make the world better through technology and innovation. I believe in collaborative learning and sharing knowledge with the community.
@@ -210,15 +126,6 @@ export default ProjectCard;`;
             />
           ))}
         </div>
-      </section>
-
-      {/* Code Example Section */}
-      <section className="mb-16">
-        <SectionTitle icon="fas fa-code" title="Code Sample" />
-        <CodeBlock code={reactCodeExample} />
-        <p className="mt-3 text-hypr-text/70 text-sm">
-          Example of a React component for showcasing projects in a portfolio website.
-        </p>
       </section>
 
       {/* Projects Section */}
