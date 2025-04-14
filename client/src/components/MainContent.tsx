@@ -14,9 +14,9 @@ export default function MainContent() {
       description: "Proficient in data science libraries including Pandas, NumPy, and Matplotlib."
     },
     {
-      icon: "fab fa-js",
-      title: "JavaScript",
-      description: "Experience with modern JavaScript and frameworks for web development."
+      icon: "fas fa-database",
+      title: "Data Science",
+      description: "Experience with data analysis, visualization, and machine learning models."
     },
     {
       icon: "fab fa-html5",
@@ -24,9 +24,9 @@ export default function MainContent() {
       description: "Strong foundation in creating responsive and accessible web interfaces."
     },
     {
-      icon: "fab fa-react",
-      title: "React",
-      description: "Building interactive UIs with modern React and related technologies."
+      icon: "fas fa-code",
+      title: "DSA",
+      description: "Strong understanding of data structures and algorithms for efficient problem solving."
     },
     {
       icon: "fab fa-cpp",
@@ -67,13 +67,13 @@ export default function MainContent() {
         <div className="rounded-lg border border-hypr-border bg-gradient-to-br from-hypr-bg/20 to-hypr-bg/50 p-6 md:p-8 flex flex-col items-center">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-5xl md:text-6xl font-bold mb-4">
-              This is
+              Hey There
             </h1>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-hypr-accent">
-              illogical-impulse
+              OREWA HAAZIQ ALI
             </h2>
             <p className="text-xl text-hypr-text/80 mb-8">
-              Orewa <span className="text-hypr-accent">Haaziq</span>, a passionate learner in Computer Science, Chess, and Programming
+              A passionate learner in Computer Science, <span className="text-hypr-accent">Data Science</span>, DSA, and Chess
             </p>
             <div className="flex flex-wrap gap-4 justify-center mt-6">
               <a
@@ -88,6 +88,12 @@ export default function MainContent() {
               >
                 <i className="fas fa-cogs mr-2"></i> Quick Start
               </a>
+              <a
+                href="#"
+                className="bg-hypr-primary hover:bg-hypr-primary/80 px-6 py-3 rounded-full text-sm font-medium transition flex items-center"
+              >
+                <i className="fas fa-file-alt mr-2"></i> Download CV
+              </a>
             </div>
           </div>
         </div>
@@ -100,13 +106,13 @@ export default function MainContent() {
         <div className="bg-hypr-sidebar rounded-lg border border-hypr-border p-6">
           <div className="prose prose-invert max-w-none">
             <p className="text-lg">
-              Orewa Haaziq, a 14-year-old passionate about programming, AI, and chess. I strive to become a data scientist and AI engineer by the time I finish school. Alongside coding, I also enjoy playing chess, where I reached a peak rating of 1900 Elo.
+              Orewa Haaziq, a 14-year-old passionate about programming, data science, DSA, and chess. I am currently learning advanced data science techniques and machine learning models to become a data scientist and AI engineer by the time I finish school.
             </p>
             <p className="text-lg mt-4">
               My values center around kindness, supporting others, and striving to make the world better through technology and innovation. I believe in collaborative learning and sharing knowledge with the community.
             </p>
             <p className="text-lg mt-4">
-              When I'm not coding or playing chess, I practice calisthenics and enjoy learning new skills that challenge both my mind and body.
+              When I'm not coding or analyzing data, I enjoy playing chess where I reached a peak rating of 1900 Elo, and practice calisthenics to keep my mind and body in balance.
             </p>
           </div>
         </div>
