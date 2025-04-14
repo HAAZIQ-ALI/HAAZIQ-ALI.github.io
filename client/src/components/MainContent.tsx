@@ -164,7 +164,7 @@ export default function MainContent() {
                 Orewa Haaziq, a 14-year-old passionate about programming, data science, DSA, and chess. I am currently learning advanced data science techniques and machine learning models to become a data scientist and AI engineer by the time I finish school.
               </p>
               <p className="text-lg mt-4">
-                My values center around kindness, supporting others, and striving to make the world better through technology and innovation. I believe in collaborative learning and sharing knowledge with the community.
+                My values revolve around curiosity, creativity, and using technology as a force for good. i deeply like to learn 'how things works' and  I believe in lifting others up, learning together, and building tools or ideas that help people and make life a little better. gaining  knowledge and improving everday is at the heart of everything I do.
               </p>
               <p className="text-lg mt-4">
                 When I'm not coding or analyzing data, I enjoy playing chess where I reached a peak rating of 1900 Elo, and practice calisthenics to keep my mind and body in balance.
