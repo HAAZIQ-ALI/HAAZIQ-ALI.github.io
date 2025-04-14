@@ -137,17 +137,39 @@ export default function MainContent() {
       <section id="about" className="mb-16">
         <SectionTitle icon="fas fa-user" title="About Me" />
         
-        <div className="bg-hypr-sidebar rounded-lg border border-hypr-border p-6">
-          <div className="prose prose-invert max-w-none">
-            <p className="text-lg">
-              Orewa Haaziq, a 14-year-old passionate about programming, data science, DSA, and chess. I am currently learning advanced data science techniques and machine learning models to become a data scientist and AI engineer by the time I finish school.
-            </p>
-            <p className="text-lg mt-4">
-              My values center around kindness, supporting others, and striving to make the world better through technology and innovation. I believe in collaborative learning and sharing knowledge with the community.
-            </p>
-            <p className="text-lg mt-4">
-              When I'm not coding or analyzing data, I enjoy playing chess where I reached a peak rating of 1900 Elo, and practice calisthenics to keep my mind and body in balance.
-            </p>
+        <div className="rounded-lg border border-hypr-border relative overflow-hidden">
+          {/* Background gradient effect */}
+          <div className="absolute inset-0 bg-gradient-to-br from-hypr-primary/10 via-hypr-bg to-hypr-secondary/10 z-0"></div>
+          
+          {/* Animated dot pattern overlay */}
+          <div className="absolute inset-0 opacity-5 z-0" 
+               style={{ 
+                 backgroundImage: 'radial-gradient(circle, #ffffff 1px, transparent 1px)', 
+                 backgroundSize: '20px 20px',
+               }}>
+          </div>
+          
+          {/* Decorative accent elements */}
+          <div className="absolute -top-5 -left-5 w-20 h-20 rounded-full bg-hypr-accent/10 blur-2xl"></div>
+          <div className="absolute -bottom-8 -right-8 w-32 h-32 rounded-full bg-hypr-primary/10 blur-3xl"></div>
+          
+          <div className="relative z-10 p-8">
+            <div className="prose prose-invert max-w-none">
+              <p className="text-lg">
+                Orewa Haaziq, a 14-year-old passionate about programming, data science, DSA, and chess. I am currently learning advanced data science techniques and machine learning models to become a data scientist and AI engineer by the time I finish school.
+              </p>
+              <p className="text-lg mt-4">
+                My values center around kindness, supporting others, and striving to make the world better through technology and innovation. I believe in collaborative learning and sharing knowledge with the community.
+              </p>
+              <p className="text-lg mt-4">
+                When I'm not coding or analyzing data, I enjoy playing chess where I reached a peak rating of 1900 Elo, and practice calisthenics to keep my mind and body in balance.
+              </p>
+            </div>
+            
+            {/* Visual accent */}
+            <div className="border-l-4 border-hypr-accent pl-4 mt-6 italic text-hypr-text/90">
+              "Solving one problem at a time, whether it's code or chess."
+            </div>
           </div>
         </div>
       </section>
@@ -188,23 +210,39 @@ export default function MainContent() {
       <section className="mb-16">
         <SectionTitle icon="fas fa-road" title="My Journey" />
 
-        <div className="bg-hypr-sidebar rounded-lg border border-hypr-border p-6">
-          <div className="grid md:grid-cols-3 gap-6">
-            <StepCard
-              icon="fas fa-child"
-              title="Started Programming"
-              description="Began learning programming at age 14 with Python."
-            />
-            <StepCard
-              icon="fas fa-chess-knight"
-              title="Chess Achievement"
-              description="Reached 1900 Elo rating after playing 4 months."
-            />
-            <StepCard
-              icon="fas fa-graduation-cap"
-              title="Future Goals"
-              description="Working towards becoming a data scientist and AI engineer."
-            />
+        <div className="rounded-lg border border-hypr-border relative overflow-hidden">
+          {/* Background effect */}
+          <div className="absolute inset-0 bg-gradient-to-r from-hypr-bg via-hypr-sidebar to-hypr-bg z-0"></div>
+          
+          {/* Abstract pattern */}
+          <div className="absolute inset-0 opacity-10 z-0"
+               style={{
+                 backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E\")",
+                 backgroundSize: '150px 150px',
+               }}>
+          </div>
+          
+          {/* Timeline connector line */}
+          <div className="absolute h-full w-1 bg-gradient-to-b from-hypr-accent/0 via-hypr-accent to-hypr-accent/0 left-1/2 transform -translate-x-1/2 hidden md:block"></div>
+          
+          <div className="relative z-10 p-8">
+            <div className="grid md:grid-cols-3 gap-6">
+              <StepCard
+                icon="fas fa-child"
+                title="Started Programming"
+                description="Began learning programming at age 14 with Python."
+              />
+              <StepCard
+                icon="fas fa-chess-knight"
+                title="Chess Achievement"
+                description="Reached 1900 Elo rating after playing 4 months."
+              />
+              <StepCard
+                icon="fas fa-graduation-cap"
+                title="Future Goals"
+                description="Working towards becoming a data scientist and AI engineer."
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -213,25 +251,48 @@ export default function MainContent() {
       <section id="contact" className="mb-16">
         <SectionTitle icon="fas fa-envelope" title="Contact Me" />
 
-        <div className="bg-hypr-sidebar rounded-lg border border-hypr-border p-6">
-          <div className="flex flex-col items-center text-center">
-            <h3 className="text-xl font-semibold mb-4">Get In Touch</h3>
-            <p className="mb-6 text-hypr-text/80 max-w-2xl">
-              Feel free to reach out for collaborations, questions, or just to say hi!
-            </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4 w-full max-w-3xl">
-              <div className="flex flex-col items-center p-4 bg-hypr-bg/30 rounded-lg">
-                <i className="fas fa-envelope text-hypr-accent text-2xl mb-3"></i>
-                <a href="mailto:haaziq@example.com" className="hover:text-hypr-accent transition">haaziq@example.com</a>
-              </div>
-              <div className="flex flex-col items-center p-4 bg-hypr-bg/30 rounded-lg">
-                <i className="fab fa-github text-hypr-accent text-2xl mb-3"></i>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-hypr-accent transition">Haaziq's GitHub</a>
-              </div>
-              <div className="flex flex-col items-center p-4 bg-hypr-bg/30 rounded-lg">
-                <i className="fab fa-linkedin text-hypr-accent text-2xl mb-3"></i>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-hypr-accent transition">Haaziq's LinkedIn</a>
+        <div className="rounded-lg border border-hypr-border relative overflow-hidden">
+          {/* Background effect */}
+          <div className="absolute inset-0 bg-gradient-to-br from-hypr-primary/5 to-hypr-bg z-0"></div>
+          
+          {/* Decorative elements */}
+          <div className="absolute top-0 right-0 w-40 h-40 bg-hypr-accent/5 rounded-full blur-3xl -mr-20 -mt-20"></div>
+          <div className="absolute bottom-0 left-0 w-60 h-60 bg-hypr-primary/5 rounded-full blur-3xl -ml-20 -mb-20"></div>
+          
+          {/* Grid pattern */}
+          <div className="absolute inset-0 opacity-5 z-0" 
+               style={{ 
+                 backgroundImage: 'linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px)', 
+                 backgroundSize: '40px 40px',
+               }}>
+          </div>
+          
+          <div className="relative z-10 p-8">
+            <div className="flex flex-col items-center text-center">
+              <h3 className="text-xl font-semibold mb-4">Get In Touch</h3>
+              <p className="mb-6 text-hypr-text/80 max-w-2xl">
+                Feel free to reach out for collaborations, questions, or just to say hi!
+              </p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 w-full max-w-3xl">
+                <div className="flex flex-col items-center p-6 bg-hypr-bg/30 rounded-lg border border-hypr-border/50 transform hover:-translate-y-1 transition-all duration-300 hover:shadow-lg hover:shadow-hypr-accent/10">
+                  <div className="w-14 h-14 rounded-full bg-hypr-primary/10 flex items-center justify-center mb-4">
+                    <i className="fas fa-envelope text-hypr-accent text-2xl"></i>
+                  </div>
+                  <a href="mailto:haaziq@example.com" className="hover:text-hypr-accent transition">haaziq@example.com</a>
+                </div>
+                <div className="flex flex-col items-center p-6 bg-hypr-bg/30 rounded-lg border border-hypr-border/50 transform hover:-translate-y-1 transition-all duration-300 hover:shadow-lg hover:shadow-hypr-accent/10">
+                  <div className="w-14 h-14 rounded-full bg-hypr-primary/10 flex items-center justify-center mb-4">
+                    <i className="fab fa-github text-hypr-accent text-2xl"></i>
+                  </div>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-hypr-accent transition">Haaziq's GitHub</a>
+                </div>
+                <div className="flex flex-col items-center p-6 bg-hypr-bg/30 rounded-lg border border-hypr-border/50 transform hover:-translate-y-1 transition-all duration-300 hover:shadow-lg hover:shadow-hypr-accent/10">
+                  <div className="w-14 h-14 rounded-full bg-hypr-primary/10 flex items-center justify-center mb-4">
+                    <i className="fab fa-linkedin text-hypr-accent text-2xl"></i>
+                  </div>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-hypr-accent transition">Haaziq's LinkedIn</a>
+                </div>
               </div>
             </div>
           </div>
