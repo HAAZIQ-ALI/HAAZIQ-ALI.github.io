@@ -20,6 +20,11 @@ export default function MainContent() {
       description: "Experience with data analysis, visualization, and machine learning models."
     },
     {
+      icon: "fab fa-linux",
+      title: "Linux",
+      description: "I use Arch btw. Experienced with customizing and optimizing Linux environments."
+    },
+    {
       icon: "fab fa-html5",
       title: "HTML/CSS",
       description: "Strong foundation in creating responsive and accessible web interfaces."
@@ -263,19 +268,19 @@ export default function MainContent() {
                   <div className="w-14 h-14 rounded-full bg-hypr-primary/10 flex items-center justify-center mb-4">
                     <i className="fas fa-envelope text-hypr-accent text-2xl"></i>
                   </div>
-                  <a href="mailto:haaziq@example.com" className="hover:text-hypr-accent transition">haaziq@example.com</a>
+                  <a href="mailto:haaziqali01@gmail.com" className="hover:text-hypr-accent transition">haaziqali01@gmail.com</a>
                 </div>
                 <div className="flex flex-col items-center p-6 bg-hypr-bg/30 rounded-lg border border-hypr-border/50 transform hover:-translate-y-1 transition-all duration-300 hover:shadow-lg hover:shadow-hypr-accent/10">
                   <div className="w-14 h-14 rounded-full bg-hypr-primary/10 flex items-center justify-center mb-4">
                     <i className="fab fa-github text-hypr-accent text-2xl"></i>
                   </div>
-                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-hypr-accent transition">Haaziq's GitHub</a>
+                  <a href="https://github.com/HAAZIQ-ALI" target="_blank" rel="noopener noreferrer" className="hover:text-hypr-accent transition">HAAZIQ-ALI</a>
                 </div>
                 <div className="flex flex-col items-center p-6 bg-hypr-bg/30 rounded-lg border border-hypr-border/50 transform hover:-translate-y-1 transition-all duration-300 hover:shadow-lg hover:shadow-hypr-accent/10">
                   <div className="w-14 h-14 rounded-full bg-hypr-primary/10 flex items-center justify-center mb-4">
                     <i className="fab fa-linkedin text-hypr-accent text-2xl"></i>
                   </div>
-                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-hypr-accent transition">Haaziq's LinkedIn</a>
+                  <a href="https://www.linkedin.com/in/haaziq-ali-98310a35b" target="_blank" rel="noopener noreferrer" className="hover:text-hypr-accent transition">haaziq-ali</a>
                 </div>
               </div>
             </div>
