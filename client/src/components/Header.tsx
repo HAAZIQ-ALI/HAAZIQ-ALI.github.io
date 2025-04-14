@@ -19,10 +19,27 @@ export default function Header({ isSidebarOpen, setIsSidebarOpen }: HeaderProps)
             <i className="fas fa-bars"></i>
           </button>
           <a href="/" className="flex items-center space-x-3">
-            <span className="text-hypr-accent text-2xl"><i className="fas fa-terminal"></i></span>
-            <h1 className="font-bold text-xl">Hyprland Wiki</h1>
+            <span className="text-hypr-accent text-2xl"><i className="fas fa-code"></i></span>
+            <h1 className="font-bold text-xl">Haaziq</h1>
           </a>
         </div>
+        <nav className="hidden md:flex items-center space-x-6">
+          <a href="#" className="text-hypr-text hover:text-hypr-accent transition">
+            <i className="fas fa-home mr-2"></i> Home
+          </a>
+          <a href="#about" className="text-hypr-text hover:text-hypr-accent transition">
+            <i className="fas fa-user mr-2"></i> About
+          </a>
+          <a href="#projects" className="text-hypr-text hover:text-hypr-accent transition">
+            <i className="fas fa-code-branch mr-2"></i> Projects
+          </a>
+          <a href="#skills" className="text-hypr-text hover:text-hypr-accent transition">
+            <i className="fas fa-cogs mr-2"></i> Skills
+          </a>
+          <a href="#contact" className="text-hypr-text hover:text-hypr-accent transition">
+            <i className="fas fa-envelope mr-2"></i> Contact
+          </a>
+        </nav>
         <div className="flex items-center space-x-4">
           <a 
             href="https://github.com" 
@@ -34,17 +51,14 @@ export default function Header({ isSidebarOpen, setIsSidebarOpen }: HeaderProps)
             <i className="fab fa-github text-xl"></i>
           </a>
           <a 
-            href="https://discord.com" 
+            href="https://linkedin.com" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-hypr-text hover:text-hypr-accent transition"
-            aria-label="Discord"
+            aria-label="LinkedIn"
           >
-            <i className="fab fa-discord text-xl"></i>
+            <i className="fab fa-linkedin text-xl"></i>
           </a>
-          <button className="bg-hypr-primary hover:bg-hypr-primary/80 px-4 py-1.5 rounded-md text-sm transition">
-            <i className="fas fa-download mr-1"></i> Download
-          </button>
         </div>
       </div>
     </header>

@@ -1,0 +1,75 @@
+Create a static portfolio website inspired by the 'dots-hyprland wiki' design. The website should be clean, modern, and feature a layout that includes the following sections:
+
+Hero Section:
+
+Title: 'Haaziq'
+
+Tagline: 'A passionate learner in Computer Science, Chess, and Programming'
+
+Background image (or screenshot): A professional workspace image.
+
+Call-to-action buttons:
+
+Projects
+
+Skills
+
+Contact Me
+
+Introduction/About Me Section:
+
+Content: A brief introduction of who I am.
+
+"I am Haaziq, a 14-year-old passionate about programming, AI, and chess. I strive to become a data scientist and AI engineer by the time I finish school. Alongside coding, I also enjoy playing chess, where I reached a peak rating of 1900 Elo."
+
+Mention my values of kindness, supporting others, and striving to make the world better.
+
+Skills Section:
+
+List of my skills in programming, AI, chess, and web development:
+
+Programming Languages: Python, C++, JavaScript, HTML/CSS
+
+Data Science & AI: Pandas, NumPy, Matplotlib, Scikit-learn, TensorFlow
+
+Chess: Strategic thinking, peak rating of 1900 Elo
+
+Web Development: Built static websites using Astro, React, and other web technologies.
+
+Calisthenics: Able to do L-sits, pull-ups, push-ups, squats.
+
+Projects Section:
+
+Showcase my projects with brief descriptions and links to their GitHub repositories:
+
+Trading Bot (Python & C++): Automated trading bot for stock market analysis and strategy.
+
+Data Science Portfolio: Projects showcasing data science skills with Pandas, NumPy, and model building.
+
+Chess Analysis Tool: Tool to analyze and track chess games, including position evaluation and move suggestions.
+
+Contact Section:
+
+Include email, GitHub, and LinkedIn links:
+
+Email: haaziq@example.com
+
+GitHub: Haaziq's GitHub
+
+LinkedIn: Haaziq's LinkedIn
+
+Visual Design:
+
+Use a minimalist design with clean, readable fonts.
+
+Include interactive elements like hover effects on buttons.
+
+Use a consistent color scheme that complements the hero section and overall aesthetic.
+
+Additional Features:
+
+Add smooth scrolling between sections.
+
+Use a responsive layout so the website looks good on both desktop and mobile.
+
+The website should be built using modern HTML, CSS, and JavaScript, ensuring that it is easy to deploy to GitHub Pages, Netlify, or Vercel. Use a static site generator like Astro for faster and more efficient performance."
