@@ -159,12 +159,12 @@ export default function MainContent() {
             <StepCard
               icon="fas fa-child"
               title="Started Programming"
-              description="Began learning programming at age 10 with Scratch and Python."
+              description="Began learning programming at age 14 with Python."
             />
             <StepCard
               icon="fas fa-chess-knight"
               title="Chess Achievement"
-              description="Reached 1900 Elo rating after years of practice and tournament play."
+              description="Reached 1900 Elo rating after playing 4 months."
             />
             <StepCard
               icon="fas fa-graduation-cap"
@@ -180,65 +180,25 @@ export default function MainContent() {
         <SectionTitle icon="fas fa-envelope" title="Contact Me" />
 
         <div className="bg-hypr-sidebar rounded-lg border border-hypr-border p-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <h3 className="text-xl font-semibold mb-4">Get In Touch</h3>
-              <p className="mb-6 text-hypr-text/80">
-                Feel free to reach out for collaborations, questions, or just to say hi!
-              </p>
-              
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <i className="fas fa-envelope w-8 text-hypr-accent"></i>
-                  <a href="mailto:haaziq@example.com" className="hover:text-hypr-accent transition">haaziq@example.com</a>
-                </div>
-                <div className="flex items-center">
-                  <i className="fab fa-github w-8 text-hypr-accent"></i>
-                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-hypr-accent transition">Haaziq's GitHub</a>
-                </div>
-                <div className="flex items-center">
-                  <i className="fab fa-linkedin w-8 text-hypr-accent"></i>
-                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-hypr-accent transition">Haaziq's LinkedIn</a>
-                </div>
-              </div>
-            </div>
+          <div className="flex flex-col items-center text-center">
+            <h3 className="text-xl font-semibold mb-4">Get In Touch</h3>
+            <p className="mb-6 text-hypr-text/80 max-w-2xl">
+              Feel free to reach out for collaborations, questions, or just to say hi!
+            </p>
             
-            <div>
-              <form className="space-y-4">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-1">Name</label>
-                  <input 
-                    type="text" 
-                    id="name" 
-                    className="w-full px-3 py-2 bg-hypr-bg border border-hypr-border rounded-md focus:outline-none focus:ring-1 focus:ring-hypr-accent"
-                    placeholder="Your name"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-1">Email</label>
-                  <input 
-                    type="email" 
-                    id="email" 
-                    className="w-full px-3 py-2 bg-hypr-bg border border-hypr-border rounded-md focus:outline-none focus:ring-1 focus:ring-hypr-accent"
-                    placeholder="your@email.com"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-1">Message</label>
-                  <textarea 
-                    id="message" 
-                    rows={4}
-                    className="w-full px-3 py-2 bg-hypr-bg border border-hypr-border rounded-md focus:outline-none focus:ring-1 focus:ring-hypr-accent"
-                    placeholder="Your message here..."
-                  ></textarea>
-                </div>
-                <button 
-                  type="button" 
-                  className="bg-hypr-primary hover:bg-hypr-primary/80 px-4 py-2 rounded-md text-sm font-medium transition w-full"
-                >
-                  Send Message
-                </button>
-              </form>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4 w-full max-w-3xl">
+              <div className="flex flex-col items-center p-4 bg-hypr-bg/30 rounded-lg">
+                <i className="fas fa-envelope text-hypr-accent text-2xl mb-3"></i>
+                <a href="mailto:haaziq@example.com" className="hover:text-hypr-accent transition">haaziq@example.com</a>
+              </div>
+              <div className="flex flex-col items-center p-4 bg-hypr-bg/30 rounded-lg">
+                <i className="fab fa-github text-hypr-accent text-2xl mb-3"></i>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-hypr-accent transition">Haaziq's GitHub</a>
+              </div>
+              <div className="flex flex-col items-center p-4 bg-hypr-bg/30 rounded-lg">
+                <i className="fab fa-linkedin text-hypr-accent text-2xl mb-3"></i>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-hypr-accent transition">Haaziq's LinkedIn</a>
+              </div>
             </div>
           </div>
         </div>
