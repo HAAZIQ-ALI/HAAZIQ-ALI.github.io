@@ -93,18 +93,15 @@ export default function MainContent() {
                     1000,
                     'ML Enthusiast',
                     1000,
-                    'DSA Expert',
+                    'Casual Game Dev',
                     1000,
                     'Python Developer',
                     1000,
                     'AI Researcher',
                     1000,
-                    'Logic Master',
-                    1000,
-                    'Math Enthusiast',
-                    1000,
-                    'Future Innovator',
-                    1000,
+                    'Turning Dreams Into Reality',
+                    1000
+                    
                   ]}
                   wrapper="span"
                   speed={50}

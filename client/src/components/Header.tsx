@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 interface HeaderProps {
   isSidebarOpen: boolean;
@@ -6,6 +6,14 @@ interface HeaderProps {
 }
 
 export default function Header({ isSidebarOpen, setIsSidebarOpen }: HeaderProps) {
+  const [isPlaying, setIsPlaying] = useState(false);
+  // Fixed YouTube video ID
+  const videoId = "OtkcJZms4mo"; // Updated to the requested video
+
+  const togglePlayer = () => {
+    setIsPlaying(!isPlaying);
+  };
+
   return (
     <header className="sticky top-0 z-50 bg-hypr-bg/80 backdrop-blur-sm border-b border-hypr-border">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
@@ -41,6 +49,13 @@ export default function Header({ isSidebarOpen, setIsSidebarOpen }: HeaderProps)
           </a>
         </nav>
         <div className="flex items-center space-x-4">
+          <button
+            onClick={togglePlayer}
+            className={`flex items-center text-hypr-text ${isPlaying ? 'bg-red-500 hover:bg-red-600' : 'bg-hypr-accent/80 hover:bg-hypr-accent'} px-3 py-1 rounded-md transition`}
+            aria-label={isPlaying ? "Stop Music" : "Play Music"}
+          >
+            <i className={`fas ${isPlaying ? 'fa-stop' : 'fa-play'} mr-2`}></i> Run
+          </button>
           <a 
             href="https://github.com" 
             target="_blank" 
@@ -61,6 +76,21 @@ export default function Header({ isSidebarOpen, setIsSidebarOpen }: HeaderProps)
           </a>
         </div>
       </div>
+
+      {/* Hidden YouTube player for audio only */}
+      {isPlaying && (
+        <div className="hidden">
+          <iframe 
+            width="1" 
+            height="1" 
+            src={`https://www.youtube.com/embed/${videoId}?autoplay=1&controls=0&showinfo=0&disablekb=1&fs=0&modestbranding=1&loop=1&playlist=${videoId}&iv_load_policy=3`}
+            title="YouTube audio player" 
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope" 
+            loading="eager"
+          ></iframe>
+        </div>
+      )}
     </header>
   );
 }
